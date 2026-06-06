@@ -42,6 +42,7 @@ export default  function home(){
         <>
         <div className="home_main">
             <div className="bag">
+            <button onClick={()=>{navigate('/addCard')}} className='home_addCardBtn'>addcards</button>
                 <div className="cards_line">
                     {cards.length > 0 && (
                         <div className={`card_wrapper dir-${direction}`} key={index + direction}>
@@ -59,7 +60,6 @@ export default  function home(){
                     <button className="right" onClick={nextCard} disabled={index === cards.length - 1}>right</button>
                 </div>
             </div>
-            <button onClick={()=>{navigate('/addCard')}} className='home_addCardBtn'>addcards</button>
         </div>
         </>
     )
