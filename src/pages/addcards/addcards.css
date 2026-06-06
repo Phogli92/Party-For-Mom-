@@ -1,0 +1,81 @@
+.bg{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top, #1f1c2c, #0f0c29);
+    color: white;
+}
+.card{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(37, 37, 37, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 40px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+.card .input, .card .textarea{
+    padding: 20px 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2);
+}
+.card .input:focus, .card .textarea:focus{
+    border-color: #6a11cb;
+    box-shadow: 0 0 10px #6a11cb55;
+}
+
+.card button{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 12px;
+    border-radius: 18px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card button:hover{
+    transform: translateY(2px);
+    box-shadow: 0 0 20px #6a11cb;
+}
+.card textarea{
+    resize: none;
+}
+.card label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 10px;
+}
+.field{
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.addCards_buttons{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}

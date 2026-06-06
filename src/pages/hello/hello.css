@@ -1,0 +1,27 @@
+.main{
+    font-family: "Inter", sans-serif;   
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at center, #00ff95, #333399, #000000);
+    background-size: 800% 800%;
+    animation: gradientMove 10s ease infinite;
+    color: azure;
+}
+.hello_text{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 20px #00ff95;
+    /* pointer-events: none; */
+    user-select: none;
+    gap: 20px;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
