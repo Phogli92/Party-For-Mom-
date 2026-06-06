@@ -1,11 +1,11 @@
 .bg{
     width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: radial-gradient(circle at top, #1f1c2c, #0f0c29);
     color: white;
+    height: 100dvh;
 }
 .card{
     width: 70%;
@@ -78,4 +78,9 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
+}
+@media (max-width: 700px){
+    .card{
+        height: 70%;
+    }
 }
