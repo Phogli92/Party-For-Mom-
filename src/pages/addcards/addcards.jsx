@@ -26,6 +26,9 @@ export default function addcards(){
     return(
         <>
         <div className="bg">
+            <h2 className="form_title">
+    ✨ Yangi tilak
+</h2>
         <div className="card">
             <div className="field">
             <label>Ismingiz</label>

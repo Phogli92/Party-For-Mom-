@@ -42,7 +42,7 @@ export default  function home(){
         <>
         <div className="home_main">
             <div className="bag">
-            <button onClick={()=>{navigate('/addCard')}} className='home_addCardBtn'>addcards</button>
+            <button onClick={()=>{navigate('/addCard')}} className='home_addCardBtn'>Tilak qoldirish</button>
                 <div className="cards_line">
                     {cards.length > 0 && (
                         <div className={`card_wrapper dir-${direction}`} key={index + direction}>
@@ -56,8 +56,8 @@ export default  function home(){
                     
                 </div>
                 <div className="buttons">
-                    <button className="left" onClick={prevCard} disabled={index === 0}>left</button>
-                    <button className="right" onClick={nextCard} disabled={index === cards.length - 1}>right</button>
+                    <button className="left" onClick={prevCard} disabled={index === 0}>←</button>
+                    <button className="right" onClick={nextCard} disabled={index === cards.length - 1}>→</button>
                 </div>
             </div>
         </div>

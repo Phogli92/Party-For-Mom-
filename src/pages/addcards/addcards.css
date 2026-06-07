@@ -6,6 +6,8 @@
     background: radial-gradient(circle at top, #1f1c2c, #0f0c29);
     color: white;
     height: 100dvh;
+    flex-direction: column;
+    gap: 5px;
 }
 .card{
     width: 70%;
@@ -28,6 +30,7 @@
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.05);
     border: 2px solid rgba(255, 255, 255, 0.2);
+    /* border: 1px solid rgba(255,255,255,.12); */
     color: white;
     outline: none;
     transition: 0.3s;
@@ -35,25 +38,58 @@
 }
 .card .input:focus, .card .textarea:focus{
     border-color: #6a11cb;
-    box-shadow: 0 0 10px #6a11cb55;
+    /* box-shadow: 0 0 10px #6a11cb55; */
+    box-shadow:
+        0 0 10px 7px rgba(120,140,255,.15);
 }
 
 .card button{
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
     padding: 12px;
-    border-radius: 18px;
-    color: white;
+    /* border-radius: 18px; */
+    /* color: white; */
     cursor: pointer;
-    border: none;
+    /* border: none; */
     transition: 0.3s;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 140px;
+    height: 48px;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    color: white;
+
+    transition: .25s ease;
 }
 .card button:hover{
-    transform: translateY(2px);
-    box-shadow: 0 0 20px #6a11cb;
+    /* transform: translateY(2px); */
+    /* box-shadow: 0 0 20px #6a11cb; */
+    transform: translateY(-3px);
+
+    background: rgba(255,255,255,.08);
+
+    border-color: rgba(255,255,255,.2);
+
+    box-shadow:
+        0 10px 30px rgba(90,120,255,.2);
+}
+.form_title{
+    font-size: 28px;
+    font-weight: 700;
+
+    color: white;
+
+    margin-bottom: 10px;
+    user-select: none;
 }
 .card textarea{
     resize: none;
@@ -77,9 +113,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-}
-@media (max-height: 580px){
+    gap: 20%;
+}   
+
+@media (max-height: 400px){
     .card{
         height: 70%;
     }
