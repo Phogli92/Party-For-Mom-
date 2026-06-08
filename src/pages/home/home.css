@@ -111,3 +111,38 @@
         opacity: 1;
     }
 }
+.information{
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.482),
+        0 10px 40px rgba(0, 0, 0, 0.629);
+    border-radius: 40px;
+    background: #080818ea;
+    z-index: 99;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+.information.vision{
+    opacity: 1;
+}
+.infor{
+    display: flex;
+    gap: 20px;
+}
+.information p{
+    letter-spacing: 1px;
+}
+.infor button{
+    z-index: 99;
+}

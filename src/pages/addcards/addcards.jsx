@@ -32,11 +32,11 @@ export default function addcards(){
         <div className="card">
             <div className="field">
             <label>Ismingiz</label>
-            <input className='input' type="text" placeholder='Ismingizni Yozing' value={title} onChange={(e)=>setTitle(e.target.value)}/>
+            <input className='input' type="text" placeholder='Ismingizni Yozing' value={title} onChange={(e)=>setTitle(e.target.value)} required/>
             </div>
             <div className="field">
             <label>Tilagingiz</label>
-            <textarea className='textarea' placeholder='Tilagingizni yozing' value={text} onChange={(e)=>setText(e.target.value)}></textarea>
+            <textarea className='textarea' placeholder='Tilagingizni yozing' value={text} onChange={(e)=>setText(e.target.value)} required></textarea>
             </div>
             <div className="addCards_buttons">
             <button className="addcard" onClick={addcard}>Tilakni yuborish</button>

@@ -10,6 +10,7 @@ export default  function home(){
     const navigate = useNavigate()
     const [index, setIndex] = useState(0)
     const[direction, setDirection] = useState(0)
+    const [information, setInformation] = useState(false)
 
     useEffect(()=>{
         async function fetchCards(){
@@ -37,12 +38,21 @@ export default  function home(){
             setIndex(index - 1)
         }
     }
-
+    
     return(
         <>
         <div className="home_main">
             <div className="bag">
-            <button onClick={()=>{navigate('/addCard')}} className='home_addCardBtn'>Tilak qoldirish</button>
+                <div className="infor">
+                    <button onClick={()=>{setInformation(!information)}}>Malumot</button>
+                    <button onClick={()=>{navigate('/addCard')}} className='home_addCardBtn'>Tilak qoldirish</button>
+                </div>
+                <div className={`information ${information ? 'vision' : ''}`}>
+                    <h1>Malumot</h1>
+                    <p>Bu web-sayt Gulnozahonning tugilgan kuni uchun tilak bildirmoqchi bolgan insonlarga
+                        Tilak qoldirish tugamsini bosib ismingiz va tilagingizni qoldirsangiz boladi😁
+                    </p>
+                </div>
                 <div className="cards_line">
                     {cards.length > 0 && (
                         <div className={`card_wrapper dir-${direction}`} key={index + direction}>

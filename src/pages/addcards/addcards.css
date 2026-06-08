@@ -55,8 +55,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 140px;
-    height: 48px;
+    min-width: 30%;
+    height: 100%;
 
     background: rgba(255,255,255,.05);
 
@@ -113,7 +113,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20%;
+    gap: 10%;
 }   
 
 @media (max-height: 400px){
